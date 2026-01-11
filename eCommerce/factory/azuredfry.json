@@ -1,0 +1,9 @@
+{
+	"name": "azuredfry",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "aee168e8-b9e3-4fee-80be-9510f3ab62ba",
+		"tenantId": "1f32ff92-cfb4-4d9e-b156-f1eba17fc962"
+	}
+}
