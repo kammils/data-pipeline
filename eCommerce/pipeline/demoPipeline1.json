@@ -19,12 +19,14 @@
 						"type": "MySqlSource"
 					},
 					"sink": {
-						"type": "ParquetSink",
+						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureBlobFSWriteSettings"
 						},
 						"formatSettings": {
-							"type": "ParquetWriteSettings"
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
 						}
 					},
 					"enableStaging": false,
@@ -39,13 +41,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "MySqlTable1",
+						"referenceName": "MySqlTableCustomers",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "target_customers_parquet",
+						"referenceName": "target_customers_csv",
 						"type": "DatasetReference"
 					}
 				]
