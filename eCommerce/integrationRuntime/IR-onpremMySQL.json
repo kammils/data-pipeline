@@ -1,0 +1,7 @@
+{
+	"name": "IR-onpremMySQL",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Set up for on Prem MySQL "
+	}
+}
